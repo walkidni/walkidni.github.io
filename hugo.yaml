@@ -248,7 +248,7 @@ params:
     title: "Walid Kini"
     subtitle: "Software Engineer Backend / Platform"
     content: "I design and deliver reliable SaaS products: APIs, business workflows, integrations, event-driven architecture, and CI/CD automation."
-    image: /images/hero.svg
+    image: /images/me.png
     bottomImage:
       enable: true
     roundImage: true # Make hero image circular | default false
