@@ -1,0 +1,14 @@
+/* Custom navbar brand logo sizing */
+.navbar-brand img {
+  width: auto !important;
+  height: 56px !important;
+  max-width: 260px;
+  object-fit: contain;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 40px !important;
+    max-width: 220px;
+  }
+}

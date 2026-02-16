@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" role="img" aria-label="Walid Kini navbar logo">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1ED8A4"/>
+      <stop offset="100%" stop-color="#21E0AC"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050A10"/>
+      <stop offset="100%" stop-color="#131A24"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="218" height="62" rx="12" fill="url(#bg)" stroke="#1ED8A4" stroke-opacity="0.35"/>
+  <rect x="12" y="12" width="40" height="40" rx="10" fill="none" stroke="url(#accent)" stroke-width="1.4"/>
+
+  <text x="32" y="39" text-anchor="middle"
+        font-family="Poppins, Inter, Segoe UI, Arial, sans-serif"
+        font-size="20" font-weight="700" fill="url(#accent)">WK</text>
+
+  <text x="64" y="39"
+        font-family="Poppins, Inter, Segoe UI, Arial, sans-serif"
+        font-size="18" font-weight="600" fill="#F2F6FA">Walid's Profile</text>
+</svg>

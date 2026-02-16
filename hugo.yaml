@@ -1,0 +1,489 @@
+baseURL: "https://walkidni.github.io"
+languageCode: "en-us"
+title: "WK Portfolio"
+theme: hugo-profile
+
+# Multilingual configuration
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content"
+    menu:
+      main: []
+  fr:
+    contentDir: "content/fr"
+    languageName: "Français"
+    weight: 3
+    menu:
+      main: []
+    params:
+      hero:
+        intro: "Bonjour, je m'appelle"
+        title: "Walid Kini"
+        subtitle: "Ingénieur logiciel Backend / Platform"
+        content: "J'aide à concevoir et livrer des produits SaaS fiables : APIs, workflows métier, intégrations, architecture event-driven et automatisation CI/CD."
+        button:
+          name: "CV"
+          url: "/files/resume.pdf"
+          download: true
+          newPage: false
+      about:
+        title: "À propos"
+        content: |-
+          Ingénieur logiciel orienté backend / platform, avec une expérience sur des produits SaaS e-commerce et marketplace.
+
+          Je conçois et livre des solutions end-to-end : APIs, workflows métier, intégrations, performance, sécurité, fiabilité et déploiement.
+
+          Je travaille actuellement comme Ingénieur Backend chez xPage sur une plateforme e-commerce multi-tenant.
+        skills:
+          title: "Technologies principales"
+          items:
+            - "Laravel / PHP"
+            - "Python (FastAPI, Django, Flask)"
+            - "MySQL / PostgreSQL / MongoDB"
+            - "Redis / RabbitMQ"
+            - "AWS (Lambda, S3, DynamoDB, EFS, EventBridge)"
+            - "Docker"
+            - "GitHub Actions"
+      experience:
+        items:
+          - company: "xPage"
+            companyUrl: "#"
+            jobs:
+              - name: "Ingénieur Backend"
+                date: "Juin 2025 - Aujourd’hui"
+                content: |
+                  Plateforme SaaS e-commerce multi-tenant : conception d'APIs et de workflows métier orientés performance et fiabilité.
+
+                  - Conception et livraison d'un programme d'affiliation complet (onboarding, tracking des conversions, dashboard affilié, calcul des commissions, anti-doublon).
+                  - Mise en place du workflow de paiement (seuil, demandes/annulation, moyens de paiement, validation et endpoints admin sécurisés).
+                  - Export CSV gros volumes en streaming HTTP (cursor + streamDownload), enrichi sans surcharge mémoire.
+                  - Développement de microservices Python (import multi-plateforme, service email, service vidéo event-driven, GeoIP).
+                  - Architecture event-driven avec RabbitMQ : workers, idempotence, retries, monitoring et logs.
+                  - Qualité et CI : tests PHPUnit et pipeline GitHub Actions.
+          - company: "Lundi Matin"
+            companyUrl: "#"
+            jobs:
+              - name: "Ingénieur Backend"
+                date: "Mars 2024 - Fév. 2025"
+                content: |
+                  Développement et maintenance de Izberg, plateforme SaaS permettant aux entreprises de lancer leur marketplace.
+
+                  - Migration du moteur de recherche produits d'Algolia vers Elasticsearch.
+                  - Stack : Python, Django, Flask, Celery, Redis, PostgreSQL, Algolia, Elasticsearch.
+          - company: "SBM Offshore"
+            companyUrl: "#"
+            jobs:
+              - name: "Stagiaire Développeur IA"
+                date: "Avr. 2023 - Sept. 2023"
+                content: "Stack : Python, Flask, React, LangChain, Hugging Face, Azure OpenAI Service."
+          - company: "Zaion"
+            companyUrl: "#"
+            jobs:
+              - name: "Stagiaire Développeur Backend"
+                date: "Fév. 2022 - Oct. 2022"
+                content: "Stack : Node.js, Express.js, MongoDB, Git."
+          - company: "Besteam-Conseil"
+            companyUrl: "#"
+            jobs:
+              - name: "Stagiaire Développeur Full-Stack"
+                date: "Juin 2021 - Sept. 2021"
+                content: "Stack : Node.js, Express.js, React, AWS DynamoDB, S3, Lambda, Git."
+      education:
+        items:
+          - title: "Diplôme d’ingénieur en informatique"
+            school:
+              name: "Bordeaux INP — ENSEIRB-MatMeca"
+              url: "#"
+            date: "2019 - 2023"
+          - title: "Classes préparatoires MP (Maths-Physique)"
+            school:
+              name: "Lycée CPGE Reda Slaoui"
+              url: "#"
+            date: "2017 - 2019"
+      projects:
+        enable: false
+      achievements:
+        enable: false
+      contact:
+        content: |-
+          Je suis disponible pour discuter d'un poste backend/full-stack, d'une mission freelance ou d'une collaboration technique.
+
+          Email : [walidkini99@gmail.com](mailto:walidkini99@gmail.com)
+          Téléphone : [+212 6 44 35 66 61](tel:+212644356661)
+        btnName: "Me contacter"
+        btnLink: mailto:walidkini99@gmail.com
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: gallery
+      name: Gallery
+      title: Gallery
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Walid Kini"
+  description: "Backend / Full-Stack Software Engineer"
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.svg"
+  customCSS: true
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#E8EDF2"
+    secondaryTextColor: "#9AA4B2"
+    textLinkColor: "#1ED8A4"
+    backgroundColor: "#070C12"
+    secondaryBackgroundColor: "#151C26"
+    primaryColor: "#1ED8A4"
+    secondaryColor: "#1A2230"
+
+    darkmode:
+      textColor: "#F2F6FA"
+      secondaryTextColor: "#A4AEBC"
+      textLinkColor: "#21E0AC"
+      backgroundColor: "#050A10"
+      secondaryBackgroundColor: "#131A24"
+      primaryColor: "#21E0AC"
+      secondaryColor: "#1B2432"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandLogo: "/logo-navbar.svg" # Logo for the brand | default is the favicon variable
+    showBrandLogo: true # Show brand logo in nav bar | default is true
+    brandName: " " # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : false
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Walid Kini"
+    subtitle: "Software Engineer Backend / Platform"
+    content: "I design and deliver reliable SaaS products: APIs, business workflows, integrations, event-driven architecture, and CI/CD automation."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/files/resume.en.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/walkidni
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/walid-kini/
+
+  # About
+  about:
+    enable: true
+    title: "About"
+    image: "/images/me.png"
+    content: |-
+      Backend/platform-oriented software engineer with experience building SaaS products for e-commerce and marketplace use cases.
+
+      I deliver end-to-end solutions: APIs, business workflows, integrations, performance, security, reliability, and deployment.
+
+      I currently work as a Backend Engineer at xPage on a multi-tenant e-commerce platform.
+    skills:
+      enable: true
+      title: "Core technologies"
+      items:
+        - "Laravel / PHP"
+        - "Python (FastAPI, Django, Flask)"
+        - "MySQL / PostgreSQL / MongoDB"
+        - "Redis / RabbitMQ"
+        - "AWS (Lambda, S3, DynamoDB, EFS, EventBridge)"
+        - "Docker"
+        - "GitHub Actions"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - company: "xPage"
+        companyUrl: "#"
+        jobs:
+          - name: "Backend Engineer"
+            date: "Jun 2025 - Present"
+            content: |
+              Multi-tenant e-commerce SaaS platform: designed APIs and business workflows focused on performance and reliability.
+
+              - Designed and delivered a full affiliate program (onboarding, conversion tracking, affiliate dashboard, commission eligibility, deduplication).
+              - Implemented payout workflows (thresholds, requests/cancellation, payout methods, validation, secure admin endpoints).
+              - Built large-scale CSV exports with HTTP streaming (cursor + streamDownload), enriched per line-item without memory overhead.
+              - Developed Python microservices (multi-platform product import, email service, event-driven video pipeline, GeoIP service).
+              - Implemented event-driven architecture with RabbitMQ workers, idempotency, retries, monitoring, and logging.
+              - Improved quality and CI with PHPUnit tests and GitHub Actions pipelines.
+
+      - company: "Lundi Matin"
+        companyUrl: "#"
+        jobs:
+          - name: "Backend Engineer"
+            date: "Mar 2024 - Feb 2025"
+            content: |
+              Developed and maintained Izberg, a SaaS platform that enables businesses to launch their own marketplace.
+
+              - Migrated product search engine from Algolia to Elasticsearch.
+              - Stack : Python, Django, Flask, Celery, Redis, PostgreSQL, Algolia, Elasticsearch.
+
+      - company: "SBM Offshore"
+        companyUrl: "#"
+        jobs:
+          - name: "AI Developer Intern"
+            date: "Apr 2023 - Sep 2023"
+            content: "Stack : Python, Flask, React, LangChain, Hugging Face, Azure OpenAI Service."
+
+      - company: "Zaion"
+        companyUrl: "#"
+        jobs:
+          - name: "Backend Developer Intern"
+            date: "Feb 2022 - Oct 2022"
+            content: "Stack : Node.js, Express.js, MongoDB, Git."
+
+      - company: "Besteam-Conseil"
+        companyUrl: "#"
+        jobs:
+          - name: "Full-Stack Developer Intern"
+            date: "Jun 2021 - Sep 2021"
+            content: "Stack : Node.js, Express.js, React, AWS DynamoDB, S3, Lambda, Git."
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Engineering Degree in Computer Science"
+        school:
+          name: "Bordeaux INP — ENSEIRB-MatMeca"
+          url: "#"
+        date: "2019 - 2023"
+      - title: "CPGE Preparatory Classes MP (Mathematics-Physics)"
+        school:
+          name: "Lycée CPGE Reda Slaoui"
+          url: "#"
+        date: "2017 - 2019"
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+        image: /images/achievement.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievement.jpg
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievement.jpg
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        badges:
+          - "Django"
+          - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: |-
+      I'm open to discussing Backend/Devops roles, freelance work, or technical collaboration.
+
+      Email: [walidkini99@gmail.com](mailto:walidkini99@gmail.com)
+      Phone: [+212 6 44 35 66 61](tel:+212644356661)
+    btnName: "Contact me"
+    btnLink: mailto:walidkini99@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/walkidni
+      linkedin: https://www.linkedin.com/in/walid-kini/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>

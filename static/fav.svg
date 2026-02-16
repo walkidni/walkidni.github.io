@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Walid Kini brand mark">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050A10"/>
+      <stop offset="100%" stop-color="#131A24"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1ED8A4"/>
+      <stop offset="100%" stop-color="#21E0AC"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#1ED8A4" stroke-opacity="0.45"/>
+
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Poppins, Inter, Segoe UI, Arial, sans-serif"
+        font-size="24" font-weight="700" letter-spacing="0.5" fill="url(#accent)">WK</text>
+</svg>
