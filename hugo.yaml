@@ -107,6 +107,23 @@ languages:
             date: "2017 - 2019"
       projects:
         enable: true
+        title: "Projets"
+        items:
+          - title: ShelfShift
+            content: Toolkit développeur pour la traduction de catalogues e-commerce. Importe des produits depuis des URLs/CSVs vers un modèle canonique, puis exporte des CSV prêts pour Shopify, BigCommerce, Wix, Squarespace et WooCommerce.
+            image: https://opengraph.githubassets.com/1/walkidni/shelfshift
+            featured:
+              name: Dépôt
+              link: https://github.com/walkidni/shelfshift
+            badges:
+              - "Python"
+              - "FastAPI"
+              - "CLI"
+              - "Pipelines CSV"
+              - "E-commerce"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/walkidni/shelfshift
       achievements:
         enable: false
       contact:
