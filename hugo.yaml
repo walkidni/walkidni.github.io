@@ -134,6 +134,18 @@ languages:
             links:
               - icon: fab fa-github
                 url: https://github.com/walkidni/shelfshift
+          - title: OrderSync Engine
+            content: Moteur de synchronisation multi-tenant. Collecte les données de commandes via des APIs et webhooks e-commerce externes, puis les transforme et les synchronise vers Google Sheets à l’aide d’une planification dynamique, d’un traitement en flux et de mécanismes d’écriture idempotents garantissant une exécution distribuée fiable.
+            image: /images/full.png
+            featured:
+              name: Lire l’étude de cas
+              link: /fr/case-studies/order-sync/
+            badges:
+              - "FastAPI"
+              - "Celery"
+              - "Redis"
+              - "MongoDB"
+              - "Google Sheets"
       achievements:
         enable: false
       contact:
@@ -401,6 +413,18 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/walkidni/shelfshift
+      - title: OrderSync Engine
+        content: Multi-tenant synchronization engine. Ingests order data from external e-commerce APIs and webhooks, transforming and syncing it to Google Sheets using dynamic scheduling, streaming processing, and idempotent upsert semantics for safe distributed execution.
+        image: /images/full.png
+        featured:
+          name: Read full case study
+          link: /case-studies/order-sync/
+        badges:
+          - "FastAPI"
+          - "Celery"
+          - "Redis"
+          - "MongoDB"
+          - "Google Sheets"
 
   #Contact
   contact:
