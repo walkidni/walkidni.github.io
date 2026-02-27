@@ -3,9 +3,11 @@ title: "Étude de cas : concevoir un moteur de synchronisation multi-tenant à p
 date: 2026-02-27
 draft: false
 tags:
-  - "Étude de cas"
-  - "Backend"
-  - "SaaS"
+  - "Architecture logicielle"
+  - "Event-Driven"
+  - "Planification"
+  - "FastAPI"
+  - "Celery"
 ---
 
 ## 1. Contexte du problème

@@ -3,9 +3,11 @@ title: "Case Study: Designing a Multi-Tenant, Dynamically Scheduled Sync Engine"
 date: 2026-02-27
 draft: false
 tags:
-  - "Case Study"
-  - "Backend"
-  - "SaaS"
+  - "Systems Design"
+  - "Event-Driven"
+  - "Scheduling"
+  - "FastAPI"
+  - "Celery"
 ---
 
 ## 1. Problem Context
