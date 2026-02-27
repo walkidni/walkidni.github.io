@@ -13,13 +13,23 @@ languages:
     weight: 1
     contentDir: "content"
     menu:
-      main: []
+      main:
+        - identifier: blog
+          name: Case Studies
+          title: Case Studies
+          url: /case-studies
+          weight: 1
   fr:
     contentDir: "content/fr"
     languageName: "Français"
     weight: 3
     menu:
-      main: []
+      main:
+        - identifier: blog
+          name: Études de cas
+          title: Études de cas
+          url: /fr/case-studies
+          weight: 1
     params:
       hero:
         intro: "Bonjour, je m'appelle"
@@ -159,31 +169,6 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
-Menus:
-  main:
-    - identifier: gallery
-      name: Gallery
-      title: Gallery
-      url: /gallery
-      weight: 2
-    #Dropdown menu
-    # - identifier: dropdown
-    #   title: Example dropdown menu
-    #   name: Dropdown
-    #   weight: 3
-    # - identifier: dropdown1
-    #   title: example dropdown 1
-    #   name: example 1
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 1
-    # - identifier: dropdown2
-    #   title: example dropdown 2
-    #   name: example 2
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 2
 
 params:
   title: "Walid Kini"
