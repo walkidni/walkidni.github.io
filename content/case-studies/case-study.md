@@ -21,7 +21,7 @@ Manual exports introduce:
 
 The objective was not simply to export orders to Google Sheets.
 
-It was to design a **fault-tolerant, shared-database multi-tenant synchronization engine with strict tenant isolation** that:
+It was to design a **fault-tolerant, shared-database multi-tenant synchronization engine with strong tenant isolation** that:
 
 - Keeps Google Sheets in sync with order data  
 - Supports user-defined export configurations  
@@ -60,7 +60,7 @@ The system consists of three runtime roles:
 - Scheduler locking  
 - Idempotency keys  
 
-This architecture enforces:
+This architecture supports:
 
 - Clear separation of concerns  
 - Safe background execution  
@@ -87,9 +87,9 @@ Tokens are:
 
 Design principle:
 
-> Shared database, strict tenant-level isolation. No cross-tenant queries.
+> Shared database, strict tenant-level isolation. No intentional cross-tenant queries.
 
-This enables safe horizontal scaling and prevents accidental data leakage.
+This enables safe horizontal scaling and reduces the risk of accidental data leakage from application-level mistakes.
 
 ---
 
@@ -97,7 +97,7 @@ This enables safe horizontal scaling and prevents accidental data leakage.
 
 Each tenant can link one or more Google accounts.
 
-Security guarantees:
+Security measures:
 
 - Server-stored OAuth state nonce  
 - One-time state consumption  
@@ -105,7 +105,7 @@ Security guarantees:
 - Linked accounts scoped per tenant  
 - Exactly one default account per tenant (enforced via partial unique index)  
 
-This ensures:
+This helps ensure:
 
 - Safe OAuth flow  
 - No replay attacks  
@@ -125,7 +125,7 @@ An automation defines:
 - Dynamic column schema  
 - Optional scheduling configuration (cron)  
 
-Constraints enforced:
+Constraints applied:
 
 - No two automations can target the same spreadsheet tab  
 - Cron must respect minimum execution interval  
@@ -164,7 +164,7 @@ Instead, the system uses a **data-driven scheduler**:
 This enables:
 
 - Safe horizontal scaling  
-- No duplicate scheduling  
+- Reduced risk of duplicate scheduling  
 - No centralized scheduler coordination  
 - Fully dynamic per-tenant scheduling  
 
@@ -182,7 +182,7 @@ Every run:
 - Stores metadata  
 - Stores error summaries  
 - Is linked to an automation  
-- Can be retried safely  
+- Can be retried with idempotency safeguards  
 
 Triggers:
 
@@ -210,10 +210,10 @@ The system enforces:
 - Event idempotency key stored in Mongo  
 - TTL window for deduplication  
 
-This guarantees:
+This is intended to provide:
 
 - Replay protection  
-- No duplicate sync runs  
+- Reduced risk of duplicate sync runs  
 - Robustness under retry storms  
 
 The system is explicitly designed for at-least-once delivery.
@@ -267,11 +267,11 @@ Write strategy:
 - Update existing rows  
 - Append new rows  
 
-This ensures:
+This helps ensure:
 
 - Safe retries  
 - No logical duplication  
-- Consistency under worker restarts  
+- Consistency under worker restarts (assuming idempotency keys remain stable)  
 
 Design goal:
 
@@ -295,7 +295,7 @@ This avoids:
 - `RuntimeError: Event loop is closed`  
 - Loop contamination across tasks  
 
-A subtle but critical production stability detail.
+A subtle but important production stability detail.
 
 ---
 
@@ -333,4 +333,3 @@ This enables:
 - Debugging  
 - Manual re-execution  
 - Failure transparency  
-
