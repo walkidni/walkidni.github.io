@@ -34,7 +34,7 @@ languages:
       hero:
         intro: "Bonjour, je m'appelle"
         title: "Walid Kini"
-        subtitle: "Ingénieur logiciel Backend / Platform"
+        subtitle: "Ingénieur logiciel orienté Backend / Platform"
         content: "J'aide à concevoir et livrer des produits SaaS fiables : APIs, workflows métier, intégrations, architecture event-driven et automatisation CI/CD."
         button:
           name: "CV"
@@ -44,21 +44,27 @@ languages:
       about:
         title: "À propos"
         content: |-
-          Ingénieur logiciel orienté backend / platform, avec une expérience sur des produits SaaS e-commerce et marketplace.
+          Ingénieur logiciel orienté Backend / Platform, spécialisé dans la conception de systèmes SaaS multi-tenant pour des plateformes e-commerce et marketplace.
 
-          Je conçois et livre des solutions end-to-end : APIs, workflows métier, intégrations, performance, sécurité, fiabilité et déploiement.
+          Je conçois et implémente des systèmes backend couvrant la définition d’API, les workflows métiers, les intégrations, l’optimisation des performances et le déploiement en production dans des environnements distribués.
 
-          Je travaille actuellement comme Ingénieur Backend chez xPage sur une plateforme e-commerce multi-tenant.
+          Actuellement Ingénieur Backend chez xPage, où je travaille sur une plateforme e-commerce multi-tenant.
         skills:
           title: "Technologies principales"
           items:
-            - "Laravel / PHP"
-            - "Python (FastAPI, Django, Flask)"
-            - "MySQL / PostgreSQL / MongoDB"
-            - "Redis / RabbitMQ"
-            - "AWS (Lambda, S3, DynamoDB, EFS, EventBridge)"
-            - "Docker"
-            - "GitHub Actions"
+            - |
+              **Backend :**  
+              Laravel / PHP  
+              Python (FastAPI, Django, Flask)
+            - |
+              **Data :**  
+              MySQL / PostgreSQL / MongoDB  
+              Redis / RabbitMQ
+            - |
+              **Cloud & DevOps :**  
+              AWS (Lambda, S3, DynamoDB, EFS, EventBridge)  
+              Docker  
+              GitHub Actions
       experience:
         items:
           - company: "xPage"
@@ -67,42 +73,61 @@ languages:
               - name: "Ingénieur Backend"
                 date: "Juin 2025 - Aujourd’hui"
                 content: |
-                  Plateforme SaaS e-commerce multi-tenant : conception d'APIs et de workflows métier orientés performance et fiabilité.
+                  Plateforme SaaS e-commerce multi-tenant : conception d’APIs et de workflows métier axés sur la performance, la fiabilité et la scalabilité.
 
-                  - Conception et livraison d'un programme d'affiliation complet (onboarding, tracking des conversions, dashboard affilié, calcul des commissions, anti-doublon).
-                  - Mise en place du workflow de paiement (seuil, demandes/annulation, moyens de paiement, validation et endpoints admin sécurisés).
-                  - Export CSV gros volumes en streaming HTTP (cursor + streamDownload), enrichi sans surcharge mémoire.
-                  - Développement de microservices Python (import multi-plateforme, service email, service vidéo event-driven, GeoIP).
-                  - Architecture event-driven avec RabbitMQ : workers, idempotence, retries, monitoring et logs.
-                  - Qualité et CI : tests PHPUnit et pipeline GitHub Actions.
-          - company: "Lundi Matin"
+                  - Développement d’un système d’affiliation et de paiements marchands pour la croissance et les décaissements.
+                  - Mise en place de pipelines d’export à haut volume en streaming, avec une mémoire constante.
+                  - Conception de services et pipelines basés sur une architecture event-driven (RabbitMQ, idempotence, retries, monitoring).
+                  - Conception et implémentation d’un moteur de synchronisation des commandes multi-tenant (webhooks, planification dynamique, traitement idempotent, workers en arrière-plan) pour synchroniser les données boutique avec des systèmes externes.
+                  - Développement de microservices Python et amélioration de la fiabilité CI via des tests automatisés et des pipelines.
+          - company: "Izberg (by Lundi Matin)"
             companyUrl: "#"
             jobs:
               - name: "Ingénieur Backend"
                 date: "Mars 2024 - Fév. 2025"
                 content: |
-                  Développement et maintenance de Izberg, plateforme SaaS permettant aux entreprises de lancer leur marketplace.
+                  Contribution au développement d’Izberg, une plateforme marketplace SaaS modulaire et API-first, permettant aux entreprises de lancer et gérer des marketplaces B2B et B2C.
 
-                  - Migration du moteur de recherche produits d'Algolia vers Elasticsearch.
-                  - Stack : Python, Django, Flask, Celery, Redis, PostgreSQL, Algolia, Elasticsearch.
+                  - Pilotage de la migration de l’infrastructure de recherche produits d’un fournisseur SaaS tiers vers un cluster Elasticsearch auto-hébergé, incluant schéma d’index, logique de ranking et pipelines de synonymes pour des catalogues d’environ 100k produits, avec une réduction significative des coûts récurrents et un contrôle complet de l’optimisation de la pertinence.
+                  - Développement et maintenance des services backend cœur en Django (monolithe) et Flask (microservices) pour la gestion du catalogue, les workflows marketplace et les intégrations API.
+                  - Contribution à la stabilité et à la maintenabilité via des abstractions de services propres, de l’optimisation backend et des pratiques de tests automatisés.
           - company: "SBM Offshore"
             companyUrl: "#"
             jobs:
               - name: "Stagiaire Développeur IA"
                 date: "Avr. 2023 - Sept. 2023"
-                content: "Stack : Python, Flask, React, LangChain, Hugging Face, Azure OpenAI Service."
+                content: |
+                  Prototypage d’outils IA internes exploitant des modèles de langage (LLM) pour la compréhension de documents et la recherche de connaissances.
+
+                  - Développement d’un chatbot basé sur une architecture RAG (FAISS, LangChain) pour répondre à des questions sur la documentation interne (PDF, DOCX, texte).
+                  - Mise en place du découpage (chunking) de documents, des pipelines d’embedding, du retrieval multi-documents et de mécanismes de citation des sources.
+                  - Intégration d’Azure OpenAI et expérimentation de LLM open-source (Falcon, LLaMA) pour la génération de réponses.
+                  - Développement d’un prototype de résumé de documents pour faciliter la consommation de connaissances internes.
           - company: "Zaion"
             companyUrl: "#"
             jobs:
               - name: "Stagiaire Développeur Backend"
                 date: "Fév. 2022 - Oct. 2022"
-                content: "Stack : Node.js, Express.js, MongoDB, Git."
+                content: |
+                  Travail sur des solutions de callbot côté client, avec personnalisation de workflows conversationnels et intégrations backend pour des cas d’usage en entreprise.
+
+                  - Personnalisation et extension de la logique du callbot selon les besoins clients.
+                  - Intégration d’APIs externes dans des workflows conversationnels (Node.js, Express).
+                  - Conception et configuration de parcours conversationnels avec IBM Watson Assistant.
+                  - Maintenance des services backend et de la persistance des données avec MongoDB.
           - company: "Besteam-Conseil"
             companyUrl: "#"
             jobs:
               - name: "Stagiaire Développeur Full-Stack"
                 date: "Juin 2021 - Sept. 2021"
-                content: "Stack : Node.js, Express.js, React, AWS DynamoDB, S3, Lambda, Git."
+                content: |
+                  Contribution au développement d’une plateforme serverless de dashboard financier permettant à des consultants de consulter en toute sécurité des indicateurs financiers personnels (salaire, dépenses, revenus, participation).
+
+                  - Implémentation de fonctionnalités de dashboard authentifiées avec Next.js et AWS Cognito (via NextAuth).
+                  - Développement de routes API backend et de logique d’agrégation pour calculer des métriques financières mensuelles et cumulées depuis DynamoDB.
+                  - Travail sur des modèles de données DynamoDB (clés userID + timestamp, GSI pour des requêtes par utilisateur).
+                  - Contribution au provisionnement de l’infrastructure AWS via Terraform (Cognito, DynamoDB, Lambda, rôles IAM).
+                  - Contribution à des fonctions Lambda en TypeScript pour le provisioning utilisateur et la gestion des données financières.
       education:
         items:
           - title: "Diplôme d’ingénieur en informatique"
@@ -110,11 +135,18 @@ languages:
               name: "Bordeaux INP — ENSEIRB-MatMeca"
               url: "#"
             date: "2019 - 2023"
+            content: |-
+              Formation généraliste en informatique avec de solides bases en bases de données, systèmes distribués, systèmes d’exploitation, réseaux, compilateurs et algorithmique.
+
+              Spécialisation en dernière année en Intelligence Artificielle, avec un focus sur le machine learning et les méthodologies orientées recherche.
+
           - title: "Classes préparatoires MP (Maths-Physique)"
             school:
               name: "Lycée CPGE Reda Slaoui"
               url: "#"
             date: "2017 - 2019"
+            content: |-
+              Formation intensive axée sur les mathématiques avancées (analyse, algèbre linéaire, probabilités) et la physique.
       projects:
         enable: true
         title: "Projets"
@@ -150,7 +182,7 @@ languages:
         enable: false
       contact:
         content: |-
-          Je suis disponible pour discuter d'un poste Backend/Devops, d'une mission freelance ou d'une collaboration technique.
+          Je suis disponible pour discuter d'un poste Backend / DevOps, d'une mission freelance ou d'une collaboration technique.
 
           Email : [walidkini99@gmail.com](mailto:walidkini99@gmail.com)
           Téléphone : [+212 6 44 35 66 61](tel:+212644356661)
@@ -285,22 +317,28 @@ params:
     title: "About"
     image: "/images/me.png"
     content: |-
-      Backend/platform-oriented software engineer with experience building SaaS products for e-commerce and marketplace use cases.
+      Backend/platform-oriented software engineer building multi-tenant SaaS systems for e-commerce and marketplace platforms.
 
-      I deliver end-to-end solutions: APIs, business workflows, integrations, performance, security, reliability, and deployment.
+      I design and implement backend systems covering API design, business workflows, integrations, performance optimization, and reliable production deployment.
 
-      I currently work as a Backend Engineer at xPage on a multi-tenant e-commerce platform.
+      Currently Backend Engineer at xPage, working on a multi-tenant e-commerce platform.
     skills:
       enable: true
       title: "Core technologies"
       items:
-        - "Laravel / PHP"
-        - "Python (FastAPI, Django, Flask)"
-        - "MySQL / PostgreSQL / MongoDB"
-        - "Redis / RabbitMQ"
-        - "AWS (Lambda, S3, DynamoDB, EFS, EventBridge)"
-        - "Docker"
-        - "GitHub Actions"
+        - |
+          **Backend:**  
+          Laravel / PHP  
+          Python (FastAPI, Django, Flask)
+        - |
+          **Data:**  
+          MySQL / PostgreSQL / MongoDB  
+          Redis / RabbitMQ
+        - |
+          **Cloud & DevOps:**  
+          AWS (Lambda, S3, DynamoDB, EFS, EventBridge)  
+          Docker  
+          GitHub Actions
 
   # Experience
   experience:
@@ -313,46 +351,65 @@ params:
           - name: "Backend Engineer"
             date: "Jun 2025 - Present"
             content: |
-              Multi-tenant e-commerce SaaS platform: designed APIs and business workflows focused on performance and reliability.
+              Multi-tenant e-commerce SaaS platform: designing APIs and business workflows focused on performance, reliability, and scalability.
 
-              - Designed and delivered a full affiliate program (onboarding, conversion tracking, affiliate dashboard, commission eligibility, deduplication).
-              - Implemented payout workflows (thresholds, requests/cancellation, payout methods, validation, secure admin endpoints).
-              - Built large-scale CSV exports with HTTP streaming (cursor + streamDownload), enriched per line-item without memory overhead.
-              - Developed Python microservices (multi-platform product import, email service, event-driven video pipeline, GeoIP service).
-              - Implemented event-driven architecture with RabbitMQ workers, idempotency, retries, monitoring, and logging.
-              - Improved quality and CI with PHPUnit tests and GitHub Actions pipelines.
+              - Led development of an affiliate and payout system powering merchant growth and disbursements.
+              - Built high-volume streaming export pipelines with constant memory usage.
+              - Designed event-driven services and pipelines (RabbitMQ, idempotency, retries, monitoring).
+              - Designed and implemented a multi-tenant order synchronization engine (webhooks, dynamic scheduling, idempotent processing, background workers) to sync shop data with external systems.
+              - Developed Python microservices and improved CI reliability with automated testing and pipelines.
 
-      - company: "Lundi Matin"
+      - company: "Izberg (by Lundi Matin)"
         companyUrl: "#"
         jobs:
           - name: "Backend Engineer"
             date: "Mar 2024 - Feb 2025"
             content: |
-              Developed and maintained Izberg, a SaaS platform that enables businesses to launch their own marketplace.
+              Worked on Izberg, a modular, API-first SaaS marketplace platform enabling enterprises to launch and manage B2B and B2C marketplaces.
 
-              - Migrated product search engine from Algolia to Elasticsearch.
-              - Stack : Python, Django, Flask, Celery, Redis, PostgreSQL, Algolia, Elasticsearch.
+              - Led the migration of the product search infrastructure from a third-party SaaS provider to a self-hosted Elasticsearch cluster, designing index schema, ranking logic, and synonym pipelines for catalogs of ~100k products, significantly reducing recurring costs and gaining full control over relevance tuning.
+              - Developed and maintained core backend services in Django (monolith) and Flask (microservices) supporting catalog management, marketplace workflows, and API integrations.
+              - Contributed to platform stability and maintainability through clean service abstractions, backend optimization, and automated testing practices.
 
       - company: "SBM Offshore"
         companyUrl: "#"
         jobs:
-          - name: "AI Developer Intern"
+          - name: "AI Engineer Intern"
             date: "Apr 2023 - Sep 2023"
-            content: "Stack : Python, Flask, React, LangChain, Hugging Face, Azure OpenAI Service."
+            content: |
+              Prototyped internal AI tooling leveraging large language models for document understanding and knowledge retrieval.
+
+              - Built a retrieval-augmented chatbot (RAG) using FAISS and LangChain to answer questions over internal engineering and research documentation (PDF, DOCX, text).
+              - Implemented document chunking, embedding pipelines, multi-document retrieval, and source citation mechanisms.
+              - Integrated Azure OpenAI and experimented with open-source LLMs (Falcon, LLaMA) for response generation.
+              - Developed a document summarization prototype to assist internal knowledge consumption.
 
       - company: "Zaion"
         companyUrl: "#"
         jobs:
           - name: "Backend Developer Intern"
             date: "Feb 2022 - Oct 2022"
-            content: "Stack : Node.js, Express.js, MongoDB, Git."
+            content: |
+              Worked on client-facing callbot solutions, customizing conversational workflows and backend integrations for enterprise use cases.
+
+              - Customized and extended callbot logic to meet client-specific requirements.
+              - Integrated external APIs into conversational workflows using Node.js and Express.
+              - Designed and configured conversation flows using IBM Watson Assistant.
+              - Maintained backend services and data persistence using MongoDB.
 
       - company: "Besteam-Conseil"
         companyUrl: "#"
         jobs:
           - name: "Full-Stack Developer Intern"
             date: "Jun 2021 - Sep 2021"
-            content: "Stack : Node.js, Express.js, React, AWS DynamoDB, S3, Lambda, Git."
+            content: |
+              Contributed to the development of a serverless financial dashboard platform enabling consultants to securely view personal financial indicators (salary, expenses, revenue, participation).
+
+              - Implemented authenticated dashboard features using Next.js and AWS Cognito (via NextAuth).
+              - Developed backend API routes and aggregation logic to compute monthly and cumulative financial metrics from DynamoDB.
+              - Worked with DynamoDB data models (userID + timestamp keys, GSI for per-user queries).
+              - Assisted in provisioning AWS infrastructure using Terraform (Cognito, DynamoDB, Lambda, IAM roles).
+              - Contributed to Lambda functions in TypeScript for user provisioning and financial data management.
 
   # Education
   education:
@@ -365,11 +422,16 @@ params:
           name: "Bordeaux INP — ENSEIRB-MatMeca"
           url: "#"
         date: "2019 - 2023"
+        content: |-
+          General computer science curriculum with strong foundations in databases, distributed systems, operating systems, networking, compilers, and algorithmic problem solving.
+
+          Completed a final-year specialization in Artificial Intelligence, focusing on machine learning and research-driven methodologies.
       - title: "CPGE Preparatory Classes MP (Mathematics-Physics)"
         school:
           name: "Lycée CPGE Reda Slaoui"
           url: "#"
         date: "2017 - 2019"
+        content: "Intensive preparation in advanced mathematics (analysis, linear algebra, probability) and physics."
 
   # Achievements
   achievements:
@@ -414,7 +476,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/walkidni/shelfshift
       - title: OrderSync Engine
-        content: Multi-tenant synchronization engine. Ingests order data from external e-commerce APIs and webhooks, transforming and syncing it to Google Sheets using dynamic scheduling, streaming processing, and idempotent upsert semantics for safe distributed execution.
+        content: Multi-tenant synchronization engine. Ingests order data from external e-commerce APIs and webhooks, transforming and syncing it to Google Sheets using dynamic scheduling and idempotent streaming execution.
         image: /images/full.png
         featured:
           name: Read full case study
@@ -431,7 +493,7 @@ params:
     enable: true
     # title: "Custom Name"
     content: |-
-      I'm open to discussing Backend/Devops roles, freelance work, or technical collaboration.
+      I'm open to discussing Backend / DevOps roles, freelance work, or technical collaboration.
 
       Email: [walidkini99@gmail.com](mailto:walidkini99@gmail.com)
       Phone: [+212 6 44 35 66 61](tel:+212644356661)
