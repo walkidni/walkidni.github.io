@@ -241,7 +241,7 @@ markup:
       unsafe: true
 
 params:
-  title: "Walid Kini"
+  title: ""
   description: "Backend / Full-Stack Software Engineer"
   images:
     - "/images/og.png"
