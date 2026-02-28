@@ -14,35 +14,52 @@ languages:
     contentDir: "content"
     menu:
       main:
-        - identifier: blog
+        - identifier: case_studies
           name: Case Studies
           title: Case Studies
-          url: /case-studies
+          url: /case-studies/
           weight: 1
+
   fr:
     contentDir: "content/fr"
     languageName: "Français"
-    weight: 3
+    weight: 2
     menu:
       main:
-        - identifier: blog
+        - identifier: case_studies
           name: Études de cas
           title: Études de cas
-          url: /fr/case-studies
+          url: /case-studies/
           weight: 1
+
     params:
       hero:
+        enable: true
         intro: "Bonjour, je m'appelle"
         title: "Walid Kini"
         subtitle: "Ingénieur logiciel orienté Backend / Platform"
         content: "J'aide à concevoir et livrer des produits SaaS fiables : APIs, workflows métier, intégrations, architecture event-driven et automatisation CI/CD."
+        image: /images/initials.png
+        bottomImage:
+          enable: true
+        roundImage: false
         button:
+          enable: true
           name: "CV"
-          url: "/files/resume.pdf"
+          url: "/files/resume_fr.pdf"
           download: true
           newPage: false
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/walkidni
+            - icon: fab fa-linkedin
+              url: https://www.linkedin.com/in/walid-kini/
+
       about:
+        enable: true
         title: "À propos"
+        image: "/images/me.png"
         content: |-
           Ingénieur logiciel orienté Backend / Platform, spécialisé dans la conception de systèmes SaaS multi-tenant pour des plateformes e-commerce et marketplace.
 
@@ -50,6 +67,7 @@ languages:
 
           Actuellement Ingénieur Backend chez xPage, où je travaille sur une plateforme e-commerce multi-tenant.
         skills:
+          enable: true
           title: "Technologies principales"
           items:
             - |
@@ -65,7 +83,9 @@ languages:
               AWS (Lambda, S3, DynamoDB, EFS, EventBridge)  
               Docker  
               GitHub Actions
+
       experience:
+        enable: true
         items:
           - company: "xPage"
             companyUrl: "#"
@@ -80,6 +100,7 @@ languages:
                   - Conception de services et pipelines basés sur une architecture event-driven (RabbitMQ, idempotence, retries, monitoring).
                   - Conception et implémentation d’un moteur de synchronisation des commandes multi-tenant (webhooks, planification dynamique, traitement idempotent, workers en arrière-plan) pour synchroniser les données boutique avec des systèmes externes.
                   - Développement de microservices Python et amélioration de la fiabilité CI via des tests automatisés et des pipelines.
+
           - company: "Izberg (by Lundi Matin)"
             companyUrl: "#"
             jobs:
@@ -91,6 +112,7 @@ languages:
                   - Pilotage de la migration de l’infrastructure de recherche produits d’un fournisseur SaaS tiers vers un cluster Elasticsearch auto-hébergé, incluant schéma d’index, logique de ranking et pipelines de synonymes pour des catalogues d’environ 100k produits, avec une réduction significative des coûts récurrents et un contrôle complet de l’optimisation de la pertinence.
                   - Développement et maintenance des services backend cœur en Django (monolithe) et Flask (microservices) pour la gestion du catalogue, les workflows marketplace et les intégrations API.
                   - Contribution à la stabilité et à la maintenabilité via des abstractions de services propres, de l’optimisation backend et des pratiques de tests automatisés.
+
           - company: "SBM Offshore"
             companyUrl: "#"
             jobs:
@@ -103,6 +125,7 @@ languages:
                   - Mise en place du découpage (chunking) de documents, des pipelines d’embedding, du retrieval multi-documents et de mécanismes de citation des sources.
                   - Intégration d’Azure OpenAI et expérimentation de LLM open-source (Falcon, LLaMA) pour la génération de réponses.
                   - Développement d’un prototype de résumé de documents pour faciliter la consommation de connaissances internes.
+
           - company: "Zaion"
             companyUrl: "#"
             jobs:
@@ -115,6 +138,7 @@ languages:
                   - Intégration d’APIs externes dans des workflows conversationnels (Node.js, Express).
                   - Conception et configuration de parcours conversationnels avec IBM Watson Assistant.
                   - Maintenance des services backend et de la persistance des données avec MongoDB.
+
           - company: "Besteam-Conseil"
             companyUrl: "#"
             jobs:
@@ -128,7 +152,10 @@ languages:
                   - Travail sur des modèles de données DynamoDB (clés userID + timestamp, GSI pour des requêtes par utilisateur).
                   - Contribution au provisionnement de l’infrastructure AWS via Terraform (Cognito, DynamoDB, Lambda, rôles IAM).
                   - Contribution à des fonctions Lambda en TypeScript pour le provisioning utilisateur et la gestion des données financières.
+
       education:
+        enable: true
+        index: false
         items:
           - title: "Diplôme d’ingénieur en informatique"
             school:
@@ -147,6 +174,7 @@ languages:
             date: "2017 - 2019"
             content: |-
               Formation intensive axée sur les mathématiques avancées (analyse, algèbre linéaire, probabilités) et la physique.
+
       projects:
         enable: true
         title: "Projets"
@@ -166,21 +194,25 @@ languages:
             links:
               - icon: fab fa-github
                 url: https://github.com/walkidni/shelfshift
+
           - title: OrderSync Engine
             content: Moteur de synchronisation multi-tenant. Collecte les données de commandes via des APIs et webhooks e-commerce externes, puis les transforme et les synchronise vers Google Sheets à l’aide d’une planification dynamique, d’un traitement en flux et de mécanismes d’écriture idempotents garantissant une exécution distribuée fiable.
             image: /images/full.png
             featured:
               name: Lire l’étude de cas
-              link: /fr/case-studies/order-sync/
+              link: /case-studies/order-sync/
             badges:
               - "FastAPI"
               - "Celery"
               - "Redis"
               - "MongoDB"
               - "Google Sheets"
+
       achievements:
         enable: false
+
       contact:
+        enable: true
         content: |-
           Je suis disponible pour discuter d'un poste Backend / DevOps, d'une mission freelance ou d'une collaboration technique.
 
@@ -200,12 +232,6 @@ outputs:
 
 enableRobotsTXT: true
 
-#services:
-  #googleAnalytics:
-    #id: G-MEASUREMENT_ID
-  #disqus:
-    #shortname: your-disqus-shortname
-
 pagination:
   pagerSize: 3
 
@@ -217,24 +243,15 @@ markup:
 params:
   title: "Walid Kini"
   description: "Backend / Full-Stack Software Engineer"
-  # staticPath: ""  # The path to serve the static files from
+  images:
+    - "/images/og.png"
+
   favicon: "/circle-wk.png"
   customCSS: true
 
-  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
-  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
-  # Note the lack of "" in true, it should be of boolean type.
   useBootstrapCDN: false
 
-  # If you want to load dynamically responsive images from Cloudinary
-  # This requires your images to be uploaded + hosted on Cloudinary
-  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
-  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
-
-  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
-
-  # Whether the fade animations on the home page will be enabled
   animate: true
 
   theme:
@@ -242,13 +259,11 @@ params:
     defaultTheme: "dark"
 
   font:
-    fontSize: 1rem # default: 1rem
-    fontWeight: 400 # default: 400
-    lineHeight: 1.5 # default: 1.5
-    textAlign: left # default: left
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
 
-  # color preference
-  # When using hex codes for colors, quotations must be used along with the # sign
   color:
     textColor: "#E8EDF2"
     secondaryTextColor: "#9AA4B2"
@@ -257,7 +272,6 @@ params:
     secondaryBackgroundColor: "#151C26"
     primaryColor: "#1ED8A4"
     secondaryColor: "#1A2230"
-
     darkmode:
       textColor: "#F2F6FA"
       secondaryTextColor: "#A4AEBC"
@@ -267,17 +281,15 @@ params:
       primaryColor: "#21E0AC"
       secondaryColor: "#1B2432"
 
-  # If you want to customize the menu, you can change it here
   navbar:
-    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    brandLogo: "/images/full.png" # Logo for the brand | default is the favicon variable
-    showBrandLogo: true # Show brand logo in nav bar | default is true
-    brandName: " " # Brand name for the brand | default is the title variable
+    align: ms-auto
+    brandLogo: "/images/full.png"
+    showBrandLogo: true
+    brandName: ""
     disableSearch: true
-    # searchPlaceholder: "Search"
     stickyNavBar:
-      enable : true
-      showOnScrollUp : false
+      enable: true
+      showOnScrollUp: false
     enableSeparator: false
     menus:
       disableAbout: false
@@ -287,7 +299,6 @@ params:
       disableAchievements: false
       disableContact: false
 
-  # Hero
   hero:
     enable: true
     intro: "Hi, my name is"
@@ -297,11 +308,11 @@ params:
     image: /images/initials.png
     bottomImage:
       enable: true
-    roundImage: false # Make hero image circular | default false
+    roundImage: false
     button:
       enable: true
       name: "Resume"
-      url: "/files/resume.en.pdf"
+      url: "/files/resume_en.pdf"
       download: true
       newPage: false
     socialLinks:
@@ -311,7 +322,6 @@ params:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/walid-kini/
 
-  # About
   about:
     enable: true
     title: "About"
@@ -340,10 +350,8 @@ params:
           Docker  
           GitHub Actions
 
-  # Experience
   experience:
     enable: true
-    # title: "Custom Name"
     items:
       - company: "xPage"
         companyUrl: "#"
@@ -411,10 +419,8 @@ params:
               - Assisted in provisioning AWS infrastructure using Terraform (Cognito, DynamoDB, Lambda, IAM roles).
               - Contributed to Lambda functions in TypeScript for user provisioning and financial data management.
 
-  # Education
   education:
     enable: true
-    # title: "Custom Name"
     index: false
     items:
       - title: "Engineering Degree in Computer Science"
@@ -426,6 +432,7 @@ params:
           General computer science curriculum with strong foundations in databases, distributed systems, operating systems, networking, compilers, and algorithmic problem solving.
 
           Completed a final-year specialization in Artificial Intelligence, focusing on machine learning and research-driven methodologies.
+
       - title: "CPGE Preparatory Classes MP (Mathematics-Physics)"
         school:
           name: "Lycée CPGE Reda Slaoui"
@@ -433,32 +440,11 @@ params:
         date: "2017 - 2019"
         content: "Intensive preparation in advanced mathematics (analysis, linear algebra, probability) and physics."
 
-  # Achievements
   achievements:
     enable: false
-    # title: "Custom Name"
-    items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievement.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievement.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievement.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
 
-  # projects
   projects:
     enable: true
-    # title: "Custom Name"
     items:
       - title: ShelfShift
         content: Developer toolkit for ecommerce catalog translation. Imports products from URLs/CSVs into a canonical model and exports platform-ready CSVs for Shopify, BigCommerce, Wix, Squarespace, and WooCommerce.
@@ -475,6 +461,7 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/walkidni/shelfshift
+
       - title: OrderSync Engine
         content: Multi-tenant synchronization engine. Ingests order data from external e-commerce APIs and webhooks, transforming and syncing it to Google Sheets using dynamic scheduling and idempotent streaming execution.
         image: /images/full.png
@@ -488,10 +475,8 @@ params:
           - "MongoDB"
           - "Google Sheets"
 
-  #Contact
   contact:
     enable: true
-    # title: "Custom Name"
     content: |-
       I'm open to discussing Backend / DevOps roles, freelance work, or technical collaboration.
 
@@ -499,12 +484,6 @@ params:
       Phone: [+212 6 44 35 66 61](tel:+212644356661)
     btnName: "Contact me"
     btnLink: mailto:walidkini99@gmail.com
-    # formspree:
-    #   enable: true # `contact.email` value will be ignored
-    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
-    #   emailCaption: "Enter your email address"
-    #   messageCaption: "Enter your message here"
-    #   messageRows: 5
 
   footer:
     recentPosts:
@@ -517,11 +496,9 @@ params:
       github: https://github.com/walkidni
       linkedin: https://www.linkedin.com/in/walid-kini/
 
-  # List pages like blogs and posts
   listPages:
     disableFeaturedImage: false
 
-  # Single pages like blog and post
   singlePages:
     socialShare: true
     readTime:
@@ -532,7 +509,6 @@ params:
     tags:
       openInNewTab: true
 
-  # For translations
   terms:
     read: "Read"
     toc: "Table Of Contents"
@@ -543,6 +519,3 @@ params:
     article: "Jan 2, 2006"
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
-
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>
