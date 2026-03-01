@@ -109,7 +109,7 @@ languages:
                 content: |
                   Contribution au développement d’Izberg, une plateforme marketplace SaaS modulaire et API-first, permettant aux entreprises de lancer et gérer des marketplaces B2B et B2C.
 
-                  - Pilotage de la migration de l’infrastructure de recherche produits d’un fournisseur SaaS tiers vers un cluster Elasticsearch auto-hébergé, incluant schéma d’index, logique de ranking et pipelines de synonymes pour des catalogues d’environ 100k produits, avec une réduction significative des coûts récurrents et un contrôle complet de l’optimisation de la pertinence.
+                  - Contribution à la migration de l’infrastructure de recherche produits d’un fournisseur SaaS tiers vers un cluster Elasticsearch auto-hébergé, incluant schéma d’index, logique de ranking et pipelines de synonymes pour des catalogues d’environ 100k produits, avec une réduction significative des coûts récurrents et un contrôle complet de l’optimisation de la pertinence.
                   - Développement et maintenance des services backend cœur en Django (monolithe) et Flask (microservices) pour la gestion du catalogue, les workflows marketplace et les intégrations API.
                   - Contribution à la stabilité et à la maintenabilité via des abstractions de services propres, de l’optimisation backend et des pratiques de tests automatisés.
 
@@ -375,7 +375,7 @@ params:
             content: |
               Worked on Izberg, a modular, API-first SaaS marketplace platform enabling enterprises to launch and manage B2B and B2C marketplaces.
 
-              - Led the migration of the product search infrastructure from a third-party SaaS provider to a self-hosted Elasticsearch cluster, designing index schema, ranking logic, and synonym pipelines for catalogs of ~100k products, significantly reducing recurring costs and gaining full control over relevance tuning.
+              - Contributed to the migration of the product search infrastructure from a third-party SaaS provider to a self-hosted Elasticsearch cluster, designing index schema, ranking logic, and synonym pipelines for catalogs of ~100k products, significantly reducing recurring costs and gaining full control over relevance tuning.
               - Developed and maintained core backend services in Django (monolith) and Flask (microservices) supporting catalog management, marketplace workflows, and API integrations.
               - Contributed to platform stability and maintainability through clean service abstractions, backend optimization, and automated testing practices.
 
