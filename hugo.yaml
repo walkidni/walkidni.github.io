@@ -29,7 +29,7 @@ languages:
         - identifier: case_studies
           name: Études de cas
           title: Études de cas
-          url: /case-studies/
+          url: /fr/case-studies/
           weight: 1
 
     params:
@@ -197,10 +197,10 @@ languages:
 
           - title: OrderSync Engine
             content: Moteur de synchronisation multi-tenant. Collecte les données de commandes via des APIs et webhooks e-commerce externes, puis les transforme et les synchronise vers Google Sheets à l’aide d’une planification dynamique, d’un traitement en flux et de mécanismes d’écriture idempotents garantissant une exécution distribuée fiable.
-            image: /images/full.png
+            image: /images/case-studies/order-sync/tenant-scoped-automation.svg
             featured:
               name: Lire l’étude de cas
-              link: /case-studies/order-sync/
+              link: /fr/case-studies/order-sync/
             badges:
               - "FastAPI"
               - "Celery"
@@ -464,7 +464,7 @@ params:
 
       - title: OrderSync Engine
         content: Multi-tenant synchronization engine. Ingests order data from external e-commerce APIs and webhooks, transforming and syncing it to Google Sheets using dynamic scheduling and idempotent streaming execution.
-        image: /images/full.png
+        image: /images/case-studies/order-sync/tenant-scoped-automation.svg
         featured:
           name: Read full case study
           link: /case-studies/order-sync/

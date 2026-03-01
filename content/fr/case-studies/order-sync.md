@@ -1,5 +1,5 @@
 ---
-title: "Étude de cas : concevoir un moteur de synchronisation multi-tenant à planification dynamique"
+title: "Order Sync Engine"
 date: 2026-02-27
 draft: false
 tags:
@@ -8,6 +8,9 @@ tags:
   - "Planification"
   - "FastAPI"
   - "Celery"
+image : /images/case-studies/order-sync/tenant-scoped-automations.png
+description: ""
+toc:
 ---
 
 ## 1. Contexte du problème
@@ -68,6 +71,8 @@ Cette architecture supporte :
 - Une exécution en arrière-plan plus sûre  
 - Un état durable  
 - Une scalabilité horizontale  
+
+![Automation tenant-scoped — architecture de haut niveau](/images/case-studies/order-sync/tenant-scoped-automation.svg)
 
 ---
 
@@ -162,6 +167,8 @@ Celery Beat est conçu pour des tâches périodiques définies centralement et e
 - Une mise à jour atomique définit `scheduler_locked_until` pour revendiquer l’exécution  
 - Le scheduler met en file un run et calcule la prochaine exécution  
 - Le prochain timestamp d’exécution est persisté  
+
+![Flux scheduler → automation → sync run](/images/case-studies/order-sync/scheduler-automation-sync.svg)
 
 Cela permet :
 

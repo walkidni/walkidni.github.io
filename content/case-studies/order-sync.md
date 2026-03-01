@@ -1,5 +1,5 @@
 ---
-title: "Case Study: Designing a Multi-Tenant, Dynamically Scheduled Sync Engine"
+title: "Order Sync Engine"
 date: 2026-02-27
 draft: false
 tags:
@@ -8,6 +8,10 @@ tags:
   - "Scheduling"
   - "FastAPI"
   - "Celery"
+image : /images/case-studies/order-sync/tenant-scoped-automation.svg
+decription: ""
+toc:
+
 ---
 
 ## 1. Problem Context
@@ -68,6 +72,8 @@ This architecture supports:
 - Safe background execution  
 - Durable state  
 - Horizontal scalability  
+
+![Tenant-scoped automation — high-level architecture](/images/case-studies/order-sync/tenant-scoped-automation.svg)
 
 ---
 
@@ -162,6 +168,8 @@ Instead, the system uses a **data-driven scheduler**:
 - An atomic update sets `scheduler_locked_until` to claim execution  
 - The scheduler enqueues a run and computes the next execution time  
 - The next run timestamp is persisted  
+
+![Scheduler → automation → sync run flow](/images/case-studies/order-sync/scheduler-automation-sync.svg)
 
 This enables:
 
