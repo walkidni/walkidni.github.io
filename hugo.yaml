@@ -182,6 +182,17 @@ languages:
               - "Redis"
               - "MongoDB"
               - "Google Sheets"
+          - title: Système de commissions et de paiements d’affiliation
+            content: Système d’affiliation pour plateforme e-commerce couvrant l’attribution des parrainages, la création de commissions à partir de la facturation, les fenêtres d’approbation, l’éligibilité au payout et les décaissements sûrs via des verrous transactionnels, des garde-fous d’idempotence et des contraintes de schéma.
+            featured:
+              name: Lire l’étude de cas
+              link: /fr/case-studies/affiliate-commission-payouts/
+            badges:
+              - "Laravel"
+              - "MySQL"
+              - "Transactions"
+              - "Payouts"
+              - "Idempotency"
 
       achievements:
         enable: false
@@ -424,6 +435,17 @@ params:
           - "Redis"
           - "MongoDB"
           - "Google Sheets"
+      - title: Affiliate Commission & Payout System
+        content: Affiliate revenue system for an e-commerce platform, covering referral attribution, invoice-driven commission creation, approval windows, payout eligibility, and safe disbursement flows backed by transactional locking, idempotent safeguards, and schema-level constraints.
+        featured:
+          name: Read full case study
+          link: /case-studies/affiliate-commission-payouts/
+        badges:
+          - "Laravel"
+          - "MySQL"
+          - "Transactions"
+          - "Payouts"
+          - "Idempotency"
 
   contact:
     enable: true
