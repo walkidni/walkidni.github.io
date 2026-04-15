@@ -315,7 +315,7 @@ Ces choix ajoutent un peu de complexité, mais ils produisent un système beauco
 
 ---
 
-## 12. Fiabilité et hardening futur
+## 12. Fiabilité et pistes d’amélioration
 
 Le système possède déjà plusieurs propriétés orientées fiabilité :
 
@@ -326,7 +326,7 @@ Le système possède déjà plusieurs propriétés orientées fiabilité :
 - gestion chiffrée des données de paiement
 - mises à jour atomiques au moment du décaissement final
 
-Le hardening futur porterait surtout sur :
+Les pistes d’amélioration porteraient surtout sur :
 
 - une auditabilité plus poussée pour les actions privilégiées sur l’argent
 - des règles de transition d’état encore plus strictes autour de la revue des payouts
