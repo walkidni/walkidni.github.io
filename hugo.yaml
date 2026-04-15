@@ -70,17 +70,16 @@ languages:
           items:
             - |
               **Backend :**  
-              Laravel / PHP  
-              Python (FastAPI, Django, Flask)
+              Python (FastAPI, Django, Flask), Laravel/PHP
             - |
-              **Data :**  
-              MySQL / PostgreSQL / MongoDB  
-              Redis / RabbitMQ
+              **Frontend :**  
+              React, Tailwind CSS
             - |
-              **Cloud & DevOps :**  
-              AWS (Lambda, S3, DynamoDB, EFS, EventBridge)  
-              Docker  
-              GitHub Actions
+              **Données & Messagerie :**  
+              MySQL, PostgreSQL, MongoDB, Redis, RabbitMQ, Celery
+            - |
+              **Infrastructure :**  
+              AWS, Docker, Terraform
 
       experience:
         enable: true
@@ -319,17 +318,16 @@ params:
       items:
         - |
           **Backend:**  
-          Laravel / PHP  
-          Python (FastAPI, Django, Flask)
+          Python (FastAPI, Django, Flask), Laravel/PHP
         - |
-          **Data:**  
-          MySQL / PostgreSQL / MongoDB  
-          Redis / RabbitMQ
+          **Frontend:**  
+          React, Tailwind CSS
         - |
-          **Cloud & DevOps:**  
-          AWS (Lambda, S3, DynamoDB, EFS, EventBridge)  
-          Docker  
-          GitHub Actions
+          **Data & Messaging:**  
+          MySQL, PostgreSQL, MongoDB, Redis, RabbitMQ, Celery
+        - |
+          **Infrastructure:**  
+          AWS, Docker, Terraform
 
   experience:
     enable: true

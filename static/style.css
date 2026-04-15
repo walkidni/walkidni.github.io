@@ -12,3 +12,83 @@
     max-width: 220px;
   }
 }
+
+/* About section overrides */
+#about .about-section-row {
+  row-gap: 2rem;
+}
+
+#about .about-image-column {
+  display: flex;
+  justify-content: center;
+}
+
+#about .about-profile-image {
+  width: min(100%, 320px);
+}
+
+#about .about-content-column {
+  max-width: 720px;
+}
+
+#about .about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+#about .about-skills-heading {
+  color: var(--text-secondary-color) !important;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  margin: 2rem 0 1rem;
+}
+
+#about .about-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  padding: 0;
+  margin: 20px 0 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+#about .about-skill-item {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  background-color: var(--secondary-color);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.85rem;
+  box-shadow: 0px 8px 32px rgba(15, 80, 100, 0.12);
+}
+
+#about .about-skill-item p {
+  margin: 0;
+  line-height: 1.55rem;
+}
+
+#about .about-skill-item strong {
+  display: block;
+  color: var(--text-color);
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 991.98px) {
+  #about .about-image-column {
+    margin-bottom: 0.5rem;
+  }
+
+  #about .about-profile-image {
+    width: min(100%, 220px);
+  }
+
+  #about .about-content-column {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #about .about-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

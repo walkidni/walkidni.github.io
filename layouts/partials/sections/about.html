@@ -1,0 +1,33 @@
+{{ if .Site.Params.about.enable | default false }}
+{{- $about := .Site.Language.Params.about | default .Site.Params.about -}}
+{{- $aboutImage := $about.image | default .Site.Params.about.image -}}
+{{- $skills := $about.skills | default .Site.Params.about.skills -}}
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">{{ $about.title | default (i18n "about") }}</h3>
+        <div class="about-section-row bg-transparent row justify-content-center align-items-center px-3 py-5">
+            {{ if $aboutImage }}
+            <div class="about-image-column col-8 col-sm-6 col-md-5 col-lg-5 mb-4 mb-lg-0">
+                <div class="image d-flex justify-content-center px-2 px-sm-3 px-lg-4">
+                    <img src="{{ $aboutImage }}" class="img-thumbnail mx-auto rounded-circle about-profile-image" alt="{{ .Site.Params.title }} profile picture">
+                </div>
+            </div>
+            {{ end }}
+            <div class="about-content-column col-sm-12 col-md-12 col-lg-7 content">
+                <div class="about-copy">
+                    {{ $about.content | markdownify }}
+                </div>
+
+                {{ if $skills.enable }}
+                <h4 class="about-skills-heading">{{ $skills.title }}</h4>
+                <ul class="about-skills-grid" aria-label="{{ $skills.title }}">
+                    {{ range $skills.items }}
+                    <li class="about-skill-item">{{ . | markdownify }}</li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
