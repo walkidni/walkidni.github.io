@@ -37,8 +37,8 @@ languages:
         enable: true
         intro: "Bonjour, je m'appelle"
         title: "Walid Kini"
-        subtitle: "Ingénieur logiciel orienté Backend / Platform"
-        content: "J'aide à concevoir et livrer des produits SaaS fiables : APIs, workflows métier, intégrations, architecture event-driven et automatisation CI/CD."
+        subtitle: "Ingénieur Backend · SaaS / Plateforme"
+        content: "Je développe des systèmes SaaS et plateforme pour des produits e-commerce et des marketplaces, avec un focus sur les API, les intégrations, les workflows asynchrones et les systèmes de données fiables."
         image: /images/initials.png
         bottomImage:
           enable: true
@@ -294,8 +294,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Walid Kini"
-    subtitle: "Software Engineer Backend / Platform"
-    content: "I design and deliver reliable SaaS products: APIs, business workflows, integrations, event-driven architecture, and CI/CD automation."
+    subtitle: "Backend Engineer · SaaS / Platform"
+    content: "I build SaaS and platform systems for e-commerce and marketplace products, with a focus on APIs, integrations, asynchronous workflows, and reliable data systems."
     image: /images/initials.png
     bottomImage:
       enable: true
