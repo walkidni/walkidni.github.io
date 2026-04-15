@@ -70,16 +70,25 @@ languages:
           items:
             - |
               **Backend :**  
-              Python (FastAPI, Django, Flask), Laravel/PHP
+              - Python (FastAPI, Django)
+              - PHP (Laravel)
             - |
               **Frontend :**  
-              React, Tailwind CSS
+              - React
+              - Tailwind CSS
             - |
               **Données & Messagerie :**  
-              MySQL, PostgreSQL, MongoDB, Redis, RabbitMQ, Celery
+              - MySQL
+              - PostgreSQL
+              - MongoDB
+              - Redis
+              - RabbitMQ
+              - Celery
             - |
               **Infrastructure :**  
-              AWS, Docker, Terraform
+              - AWS
+              - Docker
+              - Terraform
 
       experience:
         enable: true
@@ -318,16 +327,25 @@ params:
       items:
         - |
           **Backend:**  
-          Python (FastAPI, Django, Flask), Laravel/PHP
+          - Python (FastAPI, Django)
+          - PHP (Laravel)
         - |
           **Frontend:**  
-          React, Tailwind CSS
+          - React
+          - Tailwind CSS
         - |
           **Data & Messaging:**  
-          MySQL, PostgreSQL, MongoDB, Redis, RabbitMQ, Celery
+          - MySQL
+          - PostgreSQL
+          - MongoDB
+          - Redis
+          - RabbitMQ
+          - Celery
         - |
           **Infrastructure:**  
-          AWS, Docker, Terraform
+          - AWS
+          - Docker
+          - Terraform
 
   experience:
     enable: true
