@@ -170,22 +170,6 @@ languages:
         enable: true
         title: "Projets"
         items:
-          - title: ShelfShift
-            content: Toolkit développeur pour la traduction de catalogues e-commerce. Importe des produits depuis des URLs/CSVs vers un modèle canonique, puis exporte des CSV prêts pour Shopify, BigCommerce, Wix, Squarespace et WooCommerce.
-            image: https://opengraph.githubassets.com/1/walkidni/shelfshift
-            featured:
-              name: Dépôt
-              link: https://github.com/walkidni/shelfshift
-            badges:
-              - "Python"
-              - "FastAPI"
-              - "CLI"
-              - "Pipelines CSV"
-              - "E-commerce"
-            links:
-              - icon: fab fa-github
-                url: https://github.com/walkidni/shelfshift
-
           - title: OrderSync Engine
             content: Moteur de synchronisation multi-tenant. Collecte les données de commandes via des APIs et webhooks e-commerce externes, puis les transforme et les synchronise vers Google Sheets à l’aide d’une planification dynamique, d’un traitement en flux et de mécanismes d’écriture idempotents garantissant une exécution distribuée fiable.
             image: /images/case-studies/order-sync/tenant-scoped-automation.svg
@@ -428,22 +412,6 @@ params:
   projects:
     enable: true
     items:
-      - title: ShelfShift
-        content: Developer toolkit for ecommerce catalog translation. Imports products from URLs/CSVs into a canonical model and exports platform-ready CSVs for Shopify, BigCommerce, Wix, Squarespace, and WooCommerce.
-        image: https://opengraph.githubassets.com/1/walkidni/shelfshift
-        featured:
-          name: Repository
-          link: https://github.com/walkidni/shelfshift
-        badges:
-          - "Python"
-          - "FastAPI"
-          - "CLI"
-          - "CSV Pipelines"
-          - "Ecommerce"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/walkidni/shelfshift
-
       - title: OrderSync Engine
         content: Multi-tenant synchronization engine. Ingests order data from external e-commerce APIs and webhooks, transforming and syncing it to Google Sheets using dynamic scheduling and idempotent streaming execution.
         image: /images/case-studies/order-sync/tenant-scoped-automation.svg
