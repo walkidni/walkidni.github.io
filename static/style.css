@@ -13,6 +13,85 @@
   }
 }
 
+/* Hero section overrides */
+#hero {
+  min-height: auto;
+  padding-top: 4.5rem !important;
+}
+
+#hero .content {
+  max-width: 760px;
+}
+
+#hero .subtitle {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  letter-spacing: 0.02em;
+}
+
+#hero h1 {
+  margin-bottom: 0.45rem;
+}
+
+#hero h2 {
+  max-width: 18ch;
+  margin: 0;
+  font-size: clamp(1.95rem, 4.2vw, 3.15rem);
+  line-height: 1.02;
+  opacity: 0.72;
+}
+
+#hero .hero-content {
+  margin-top: 1.1rem;
+  max-width: 58ch;
+  line-height: 1.72rem;
+}
+
+#hero .content > .row {
+  margin-top: 1.5rem;
+  align-items: center;
+  row-gap: 0.8rem;
+}
+
+#hero a.btn,
+#hero a.btn.social-icon {
+  margin-top: 0 !important;
+}
+
+#hero a.btn {
+  padding: 0.72rem 1.45rem;
+}
+
+#hero a.btn:focus-visible,
+#hero a.btn.social-icon:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(30, 216, 164, 0.14);
+}
+
+#hero .image {
+  padding-top: 1.25rem !important;
+}
+
+#hero .image img {
+  width: min(100%, 250px);
+  border-width: 2px;
+}
+
+@media (min-width: 992px) {
+  #hero .content {
+    padding-right: 2rem;
+  }
+
+  #hero .image {
+    padding-top: 0.5rem !important;
+  }
+
+  #hero .image img {
+    width: min(100%, 280px);
+  }
+}
+
 /* About section overrides */
 #about .about-section-row {
   row-gap: 2rem;
@@ -110,6 +189,37 @@
 }
 
 @media (max-width: 991.98px) {
+  #hero {
+    padding-top: 3.25rem !important;
+  }
+
+  #hero .content {
+    text-align: left;
+  }
+
+  #hero h2 {
+    max-width: 14ch;
+    font-size: clamp(1.75rem, 7vw, 2.6rem);
+  }
+
+  #hero .hero-content {
+    margin-top: 0.95rem;
+    max-width: 100%;
+    line-height: 1.62rem;
+  }
+
+  #hero .content > .row {
+    margin-top: 1.15rem;
+  }
+
+  #hero .image {
+    padding-top: 1rem !important;
+  }
+
+  #hero .image img {
+    width: min(100%, 220px);
+  }
+
   #about .about-image-column {
     margin-bottom: 0.5rem;
   }
@@ -125,6 +235,47 @@
 }
 
 @media (max-width: 575.98px) {
+  #hero {
+    padding-top: 2.5rem !important;
+  }
+
+  #hero .subtitle {
+    margin-bottom: 0.45rem;
+  }
+
+  #hero h1 {
+    font-size: clamp(2.2rem, 12vw, 2.8rem);
+    margin-bottom: 0.35rem;
+  }
+
+  #hero h2 {
+    max-width: 100%;
+    font-size: clamp(1.45rem, 8.2vw, 2rem);
+    line-height: 1.08;
+  }
+
+  #hero .hero-content {
+    margin-top: 0.85rem;
+    font-size: 0.95rem;
+    line-height: 1.55rem;
+  }
+
+  #hero .content > .row {
+    margin-top: 1rem;
+  }
+
+  #hero a.btn {
+    padding: 0.68rem 1.2rem;
+  }
+
+  #hero .image {
+    padding-top: 0.7rem !important;
+  }
+
+  #hero .image img {
+    width: min(100%, 190px);
+  }
+
   #about .about-skills-grid {
     grid-template-columns: 1fr;
     gap: 0.6rem;
