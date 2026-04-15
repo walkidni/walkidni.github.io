@@ -61,11 +61,9 @@ languages:
         title: "À propos"
         image: "/images/me.png"
         content: |-
-          Ingénieur logiciel orienté Backend / Platform, spécialisé dans la conception de systèmes SaaS multi-tenant pour des plateformes e-commerce et marketplace.
+          Ingénieur backend développant des systèmes SaaS et plateforme pour des produits e-commerce et des marketplaces.
 
-          Je conçois et implémente des systèmes backend couvrant la définition d’API, les workflows métiers, les intégrations, l’optimisation des performances et le déploiement en production dans des environnements distribués.
-
-          Actuellement Ingénieur Backend chez xPage, où je travaille sur une plateforme e-commerce multi-tenant.
+          Spécialisé dans les API, les intégrations, les workflows asynchrones et les systèmes de données fiables, avec une expérience full-stack orientée backend.
         skills:
           enable: true
           title: "Technologies principales"
@@ -312,11 +310,9 @@ params:
     title: "About"
     image: "/images/me.png"
     content: |-
-      Backend/platform-oriented software engineer building multi-tenant SaaS systems for e-commerce and marketplace platforms.
+      Backend engineer building SaaS and platform systems for e-commerce and marketplace products.
 
-      I design and implement backend systems covering API design, business workflows, integrations, performance optimization, and reliable production deployment.
-
-      Currently Backend Engineer at xPage, working on a multi-tenant e-commerce platform.
+      Focused on APIs, integrations, asynchronous workflows, and reliable data systems, with experience across backend-heavy full-stack applications.
     skills:
       enable: true
       title: "Core technologies"
