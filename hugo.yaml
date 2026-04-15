@@ -91,67 +91,52 @@ languages:
             companyUrl: "#"
             jobs:
               - name: "Ingénieur Backend"
-                date: "Juin 2025 - Aujourd’hui"
+                date: "Juin 2025 – Présent"
                 content: |
-                  Plateforme SaaS e-commerce multi-tenant : conception d’APIs et de workflows métier axés sur la performance, la fiabilité et la scalabilité.
+                  - Conception et développement d’API Laravel et de workflows backend pour le monolithe e-commerce multi-tenant de xPage.
+                  - Développement d’applications d’intégration full-stack Shopify et COD Network avec Python/FastAPI et React.
+                  - Développement d’un workflow de synchronisation des commandes entre xPage et Google Sheets avec Celery.
+                  - Développement d’un système d’affiliation et de paiements en Laravel/PHP couvrant onboarding, suivi des commissions, déduplication et décaissements.
+                  - Développement de microservices Python pour l’import, les workflows email, le traitement vidéo et des tâches GeoIP.
+                  - Technologies complémentaires : RabbitMQ, Celery, GraphQL, AWS, Redis, MySQL, PostgreSQL, MongoDB, Docker.
 
-                  - Développement d’un système d’affiliation et de paiements marchands pour la croissance et les décaissements.
-                  - Mise en place de pipelines d’export à haut volume en streaming, avec une mémoire constante.
-                  - Conception de services et pipelines basés sur une architecture event-driven (RabbitMQ, idempotence, retries, monitoring).
-                  - Conception et implémentation d’un moteur de synchronisation des commandes multi-tenant (webhooks, planification dynamique, traitement idempotent, workers en arrière-plan) pour synchroniser les données boutique avec des systèmes externes.
-                  - Développement de microservices Python et amélioration de la fiabilité CI via des tests automatisés et des pipelines.
-
-          - company: "Izberg (by Lundi Matin)"
+          - company: "Izberg (Lundi Matin)"
             companyUrl: "#"
             jobs:
               - name: "Ingénieur Backend"
-                date: "Mars 2024 - Fév. 2025"
+                date: "Mars 2024 – Fév. 2025"
                 content: |
-                  Contribution au développement d’Izberg, une plateforme marketplace SaaS modulaire et API-first, permettant aux entreprises de lancer et gérer des marketplaces B2B et B2C.
-
-                  - Contribution à la migration de l’infrastructure de recherche produits d’un fournisseur SaaS tiers vers un cluster Elasticsearch auto-hébergé, incluant schéma d’index, logique de ranking et pipelines de synonymes pour des catalogues d’environ 100k produits, avec une réduction significative des coûts récurrents et un contrôle complet de l’optimisation de la pertinence.
-                  - Développement et maintenance des services backend cœur en Django (monolithe) et Flask (microservices) pour la gestion du catalogue, les workflows marketplace et les intégrations API.
-                  - Contribution à la stabilité et à la maintenabilité via des abstractions de services propres, de l’optimisation backend et des pratiques de tests automatisés.
+                  - Travail sur Izberg, plateforme marketplace SaaS API-first pour le commerce B2B et B2C.
+                  - Contribution à la migration d’un moteur de recherche SaaS tiers vers un cluster Elasticsearch auto-hébergé servant ~100k produits.
+                  - Conception d’index, tuning de pertinence et pipelines de synonymes pour améliorer le contrôle de la recherche et l’observabilité.
+                  - Contribution à la réduction des coûts d’infrastructure récurrents en internalisant la recherche.
+                  - Développement de services backend en Django (monolithe) et Flask (microservices).
 
           - company: "SBM Offshore"
             companyUrl: "#"
             jobs:
-              - name: "Stagiaire Développeur IA"
-                date: "Avr. 2023 - Sept. 2023"
+              - name: "Stage Ingénieur IA"
+                date: "Avr. 2023 – Sep. 2023"
                 content: |
-                  Prototypage d’outils IA internes exploitant des modèles de langage (LLM) pour la compréhension de documents et la recherche de connaissances.
-
-                  - Développement d’un chatbot basé sur une architecture RAG (FAISS, LangChain) pour répondre à des questions sur la documentation interne (PDF, DOCX, texte).
-                  - Mise en place du découpage (chunking) de documents, des pipelines d’embedding, du retrieval multi-documents et de mécanismes de citation des sources.
-                  - Intégration d’Azure OpenAI et expérimentation de LLM open-source (Falcon, LLaMA) pour la génération de réponses.
-                  - Développement d’un prototype de résumé de documents pour faciliter la consommation de connaissances internes.
+                  - Conception d’un chatbot RAG sur de la documentation interne d’ingénierie et de recherche avec FAISS et LangChain.
+                  - Implémentation des pipelines de chunking, d’embeddings, de retrieval et de citation de sources pour la question-réponse documentaire.
+                  - Évaluation d’Azure OpenAI et de LLM open source, dont Falcon et LLaMA, pour la génération de réponses et des prototypes de synthèse.
 
           - company: "Zaion"
             companyUrl: "#"
             jobs:
-              - name: "Stagiaire Développeur Backend"
-                date: "Fév. 2022 - Oct. 2022"
+              - name: "Stage Développeur Backend"
+                date: "Fév. 2022 – Oct. 2022"
                 content: |
-                  Travail sur des solutions de callbot côté client, avec personnalisation de workflows conversationnels et intégrations backend pour des cas d’usage en entreprise.
-
-                  - Personnalisation et extension de la logique du callbot selon les besoins clients.
-                  - Intégration d’APIs externes dans des workflows conversationnels (Node.js, Express).
-                  - Conception et configuration de parcours conversationnels avec IBM Watson Assistant.
-                  - Maintenance des services backend et de la persistance des données avec MongoDB.
+                  - Développement d’intégrations backend pour des workflows de callbots entreprise, reliant des API externes à des cas d’usage conversationnels clients.
 
           - company: "Besteam-Conseil"
             companyUrl: "#"
             jobs:
-              - name: "Stagiaire Développeur Full-Stack"
-                date: "Juin 2021 - Sept. 2021"
+              - name: "Stage Développeur Full-Stack"
+                date: "Juin 2021 – Sep. 2021"
                 content: |
-                  Contribution au développement d’une plateforme serverless de dashboard financier permettant à des consultants de consulter en toute sécurité des indicateurs financiers personnels (salaire, dépenses, revenus, participation).
-
-                  - Implémentation de fonctionnalités de dashboard authentifiées avec Next.js et AWS Cognito (via NextAuth).
-                  - Développement de routes API backend et de logique d’agrégation pour calculer des métriques financières mensuelles et cumulées depuis DynamoDB.
-                  - Travail sur des modèles de données DynamoDB (clés userID + timestamp, GSI pour des requêtes par utilisateur).
-                  - Contribution au provisionnement de l’infrastructure AWS via Terraform (Cognito, DynamoDB, Lambda, rôles IAM).
-                  - Contribution à des fonctions Lambda en TypeScript pour le provisioning utilisateur et la gestion des données financières.
+                  - Développement de fonctionnalités authentifiées pour un dashboard financier serverless avec Next.js, AWS Cognito et Terraform.
 
       education:
         enable: true
@@ -357,67 +342,52 @@ params:
         companyUrl: "#"
         jobs:
           - name: "Backend Engineer"
-            date: "Jun 2025 - Present"
+            date: "Jun 2025 – Present"
             content: |
-              Multi-tenant e-commerce SaaS platform: designing APIs and business workflows focused on performance, reliability, and scalability.
-
-              - Led development of an affiliate and payout system powering merchant growth and disbursements.
-              - Built high-volume streaming export pipelines with constant memory usage.
-              - Designed event-driven services and pipelines (RabbitMQ, idempotency, retries, monitoring).
-              - Designed and implemented a multi-tenant order synchronization engine (webhooks, dynamic scheduling, idempotent processing, background workers) to sync shop data with external systems.
-              - Developed Python microservices and improved CI reliability with automated testing and pipelines.
+              - Designed and delivered Laravel APIs and backend workflows for xPage’s multi-tenant e-commerce monolith.
+              - Built full-stack Shopify and COD Network integration apps with Python/FastAPI and React.
+              - Built an order synchronization workflow between xPage and Google Sheets for reporting and merchant operations, using Celery.
+              - Built an affiliate & payout system in Laravel/PHP covering onboarding, commission tracking, deduplication, and disbursement workflows.
+              - Built Python microservices for import processing, email workflows, video processing, and GeoIP-based backend tasks.
+              - Additional technologies: RabbitMQ, Celery, GraphQL, AWS, Redis, MySQL, PostgreSQL, MongoDB, Docker.
 
       - company: "Izberg (by Lundi Matin)"
         companyUrl: "#"
         jobs:
           - name: "Backend Engineer"
-            date: "Mar 2024 - Feb 2025"
+            date: "Mar 2024 – Feb 2025"
             content: |
-              Worked on Izberg, a modular, API-first SaaS marketplace platform enabling enterprises to launch and manage B2B and B2C marketplaces.
-
-              - Contributed to the migration of the product search infrastructure from a third-party SaaS provider to a self-hosted Elasticsearch cluster, designing index schema, ranking logic, and synonym pipelines for catalogs of ~100k products, significantly reducing recurring costs and gaining full control over relevance tuning.
-              - Developed and maintained core backend services in Django (monolith) and Flask (microservices) supporting catalog management, marketplace workflows, and API integrations.
-              - Contributed to platform stability and maintainability through clean service abstractions, backend optimization, and automated testing practices.
+              - Worked on Izberg, an API-first SaaS marketplace platform for B2B and B2C commerce.
+              - Contributed to the migration from third-party search SaaS to a self-hosted Elasticsearch cluster serving ~100k products.
+              - Worked on index design, relevance tuning, and synonym pipelines to improve search control and observability.
+              - Helped reduce recurring infrastructure costs by moving search in-house.
+              - Developed backend services in Django (monolith) and Flask (microservices).
 
       - company: "SBM Offshore"
         companyUrl: "#"
         jobs:
           - name: "AI Engineer Intern"
-            date: "Apr 2023 - Sep 2023"
+            date: "Apr 2023 – Sep 2023"
             content: |
-              Prototyped internal AI tooling leveraging large language models for document understanding and knowledge retrieval.
-
-              - Built a retrieval-augmented chatbot (RAG) using FAISS and LangChain to answer questions over internal engineering and research documentation (PDF, DOCX, text).
-              - Implemented document chunking, embedding pipelines, multi-document retrieval, and source citation mechanisms.
-              - Integrated Azure OpenAI and experimented with open-source LLMs (Falcon, LLaMA) for response generation.
-              - Developed a document summarization prototype to assist internal knowledge consumption.
+              - Built a retrieval-augmented chatbot over internal engineering and research documentation using FAISS and LangChain.
+              - Implemented document chunking, embedding and retrieval pipelines, and source citation for document question answering.
+              - Evaluated Azure OpenAI and open-source LLMs including Falcon and LLaMA for response generation and summarization prototypes.
 
       - company: "Zaion"
         companyUrl: "#"
         jobs:
           - name: "Backend Developer Intern"
-            date: "Feb 2022 - Oct 2022"
+            date: "Feb 2022 – Oct 2022"
             content: |
-              Worked on client-facing callbot solutions, customizing conversational workflows and backend integrations for enterprise use cases.
-
-              - Customized and extended callbot logic to meet client-specific requirements.
-              - Integrated external APIs into conversational workflows using Node.js and Express.
-              - Designed and configured conversation flows using IBM Watson Assistant.
-              - Maintained backend services and data persistence using MongoDB.
+              - Built backend integrations for enterprise callbot workflows, connecting external APIs to client-specific conversational use cases.
 
       - company: "Besteam-Conseil"
         companyUrl: "#"
         jobs:
           - name: "Full-Stack Developer Intern"
-            date: "Jun 2021 - Sep 2021"
+            date: "Jun 2021 – Sep 2021"
             content: |
-              Contributed to the development of a serverless financial dashboard platform enabling consultants to securely view personal financial indicators (salary, expenses, revenue, participation).
-
-              - Implemented authenticated dashboard features using Next.js and AWS Cognito (via NextAuth).
-              - Developed backend API routes and aggregation logic to compute monthly and cumulative financial metrics from DynamoDB.
-              - Worked with DynamoDB data models (userID + timestamp keys, GSI for per-user queries).
-              - Assisted in provisioning AWS infrastructure using Terraform (Cognito, DynamoDB, Lambda, IAM roles).
-              - Contributed to Lambda functions in TypeScript for user provisioning and financial data management.
+              - Built authenticated features for a serverless financial dashboard using Next.js, AWS Cognito, and Terraform-managed AWS infrastructure.
 
   education:
     enable: true
